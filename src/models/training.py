@@ -113,9 +113,29 @@ def main():
             save_checkpoint(net, optimizer, training_parameters, project_parameters["models"], epoch )
 
 
+"""
+# change "n_epochs" to 1 for quick execution,
+# change "model_name" for saving
+# "use_cbam_block":1 for cbam_block after conv layer
+# "use_cbam_class":1 for cbam before the linear classifier.
+{
+    "batch_size": 4,
+    "lr": 0.001,
+    "momentum": 0.9,
+    "batch_every": 100,
+    "n_epochs": 15,
+    "num_workers":2,
+    "model_name": "resnet18_cifar10_cbam_block",
+    "load_model":"",
+    "save_every": 1,
+    "reduction_ratio": 16,
+    "kernel_cbam":3,
+    "use_cbam_block":1,
+    "use_cbam_class":0,
+    "resnet_depth":18
 
-
-    
+}
+"""  
 
 
     
