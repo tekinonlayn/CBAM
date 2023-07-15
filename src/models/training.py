@@ -25,9 +25,9 @@ def main():
     torch.autograd.set_detect_anomaly(True)
 
     # load parameters
-    project_parameters = json.load(open(args[1]))
-    training_parameters = json.load(open(args[2]))
-    data_path = args[3]
+    project_parameters = json.load(open("parameters/project.json")) #json.load(open(args[1]))
+    training_parameters = json.load(open("parameters/training.json")) #json.load(open(args[2]))
+    data_path = "data/" #args[3]
 
     # set random seed and device
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
