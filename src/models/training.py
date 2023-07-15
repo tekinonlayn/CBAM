@@ -118,6 +118,7 @@ def main():
 # change "model_name" for saving
 # "use_cbam_block":1 for cbam_block after conv layer
 # "use_cbam_class":1 for cbam before the linear classifier.
+# "resnet_depth": 18 #34, 50, ...
 {
     "batch_size": 4,
     "lr": 0.001,
